@@ -1,0 +1,31 @@
+Q.What is cloud computing?
+Ans:- cloud computing means it provides services to access programs,application,storage,network,server over the internet throgh client side
+
+Q.Deployment model in cloud?
+Ans:- Private cloud, Public cloud, Hybrid cloud, Community cloud
+
+Q.Service model in Cloud?
+Ans:- IaaS (Infrastructure as a service)
+      PaaS (Platform as a service)
+      SaaS (Software as a service)
+
+Q.Architecture of cloud computing?
+Ans:-Frontend:- 1)client infrastructure
+
+     Backend:- 1)Application            5)Infrastructure
+              2)service                 6)Managemnet
+              3)Runtime cloud           7)security
+              4)storage                 8)Internet
+              9)Database                10)networking
+
+Q.AWS Global Infrastructure Count?
+Ans:- 102 Availability zone
+      32 regions 
+
+Q.Why do we use regions?
+Ans:- To provide additional scalablity ,reliablity ,latency,high throughput
+
+Q.What is service ? & what is resources?
+Ans:- it store data runs your website,or helps with other computing tasks.AWS services are like building blocks that let you do different thing on the internet without having to set up our won servers and infrastructure
+   Resources:-the resource is what you create in service
+      
