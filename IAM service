@@ -1,0 +1,41 @@
+Q.How many resources do we have in IAM ?
+Ans:-Users, Groups,Roles,Policies,Access key,Certificate,MFA,Server certificates
+
+Q.Deployment model in IAM ?
+Ans:-Account level IAM,Multi-Account IAM Roles and Federated Access,Resource Based Access control,IAM groups
+
+Q.Identities in IAM ?
+Ans:-IAM Users,IAM Groups,IAM Roles,Federated Users,AWS Account Root Useer,IAM service
+
+Q.What is an IAM User ?
+Ans:-IAM is an entity that you create in AWS.A user in AWS consists of a name and credentials.
+
+Q.What is an IAM group ?
+Ans:-IAM group is a collection of IAM users.
+
+Q.What is an IAM policy ?
+Ans:- IAM policies define permission for an action regardless of the method that you use to perform the operations.
+
+Q.What is IAM Role ?
+Ans:-An IAM role is an identity within your AWS account that has specific permissions.
+
+Q.Where do we attach Identity Based policy ?
+Ans:- to an IAM user,group or role
+
+Q.where do we attach Resource Based policy ?
+Ans:-Resource based policy are attach to an resource
+
+Q.Can we be able to create Policy via json code ?
+Ans:- Yes we can create
+
+Q.what is dominator policy ?
+Ans:-bunch of permission 
+
+Q.What is ARN ? What are the fields in ARN ?
+Ans:-uniquely identify resources.we require ARN when you need to specify a rrsource across all of AWS,such as in IAM policies,tags and API calls
+
+Q.How many types of ARN partition ?
+Ans:-aws-AWS Regions , aws-cn-China Region ,aws-us-gov-AWS GovCloud(US)region
+
+Q.What are tags ?
+Ans:-tag is a label consisting of a user-defined key and value
