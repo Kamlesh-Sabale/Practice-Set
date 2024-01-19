@@ -1,0 +1,85 @@
+ Q1.Difference between Block storage & Object Storage ?
+Ans:-Block storage and object storage are both types of data storage commonly used in the realm of computing, but they differ in their architecture, use cases, and how they handle data.
+     Block storage is akin to traditional storage systems with structured data, suitable for applications that need direct and fast access to raw storage blocks.
+
+     Object storage is designed for scalable and distributed data, with each piece of data treated as an independent object. It is well-suited for large-scale, distributed, and globally accessible storage needs.
+
+Q2. Difference between static website & dynamic website ?
+Ans:-Static websites are simpler, faster, and easier to host but are limited in terms of interactivity and real-time updates.
+     Dynamic websites offer a more interactive and personalized user experience but require server-side processing and are typically more complex to develop and maintain.
+
+Q3.What are the naming rules ?
+Ans:-Good: my-awesome-s3-bucket
+     Avoid: My Awesome S3 Bucket
+
+Q4.What is the major resource of S3 Bucket ?
+Ans:-In Amazon S3 (Simple Storage Service), the major resource is the bucket. A bucket is a container for objects (files) stored in Amazon S3. 
+     It's a top-level entity within S3, and each object is contained within a bucket. Buckets provide a way to organize and control access to your data in Amazon S3.
+
+Q5.Why do we need to host static websites instead of dynamic websites ?
+Ans:-Hosting static websites has its advantages in certain scenarios compared to hosting dynamic websites. Here are some reasons why one might choose to host a static website over a dynamic one:
+     Simplicity:
+     Performance:
+     Cost-Effectiveness:
+     Scalability:
+
+Q6.What is versioning & Why do we need versioning ?
+Ans:-versioning provides a structured way to manage changes, collaborate effectively, and maintain a reliable history of your work. 
+    It's a fundamental concept in software development, document management, and collaborative projects.
+
+Q7.What are the objects and types of objects that we are uploading into the S3 Bucket ?
+Ans:-
+     In Amazon S3 (Simple Storage Service), an "object" is the fundamental entity stored in the service. 
+     Objects are typically files such as documents, images, videos, or any other type of binary or text data. 
+     Each object consists of data, a key (unique within a bucket), and metadata. Here are some common types of objects that are frequently uploaded into S3 buckets.
+
+Q8.Why is MFA Delete important in S3 Bucket object level ?
+Ans:-MFA (Multi-Factor Authentication) Delete is an additional layer of security provided by Amazon S3 (Simple Storage Service) to help protect sensitive data stored in S3 buckets, especially at the object level. 
+     When MFA Delete is enabled for a versioned S3 bucket, it requires the use of MFA authentication before allowing the deletion of versions of objects.
+
+Q9.What is S3 Multipart upload ?
+Ans:-Amazon S3 Multipart Upload is a feature of Amazon Simple Storage Service (S3) that allows you to upload large objects in parts. 
+     This feature is particularly useful when dealing with very large files, such as videos or large datasets, where uploading the entire file in a single request might not be efficient or practical. 
+     Multipart Upload provides advantages in terms of performance, resumability, and efficiency.
+
+Q10.What are the storage classes in Amazon S3 ?  
+Ans:-Amazon S3 offers several storage classes, each designed to meet different needs in terms of data access, durability, and cost.
+     The choice of storage class depends on factors such as how frequently you access your data, the speed at which you need to retrieve it, and cost considerations.
+
+      storage classes available in Amazon S3 are:
+       Standard:
+       Intelligent-Tiering:
+       One Zone-Infrequent Access (Z-IA):
+       Glacier:
+      Glacier Deep Archive:
+      Reduced Redundancy Storage (RRS):
+
+Q11.What is ACL ?
+Ans:-In the context of Amazon S3 (Simple Storage Service) and many other systems, ACL stands for "Access Control List."
+     An Access Control List is a mechanism used to manage access permissions to resources, such as objects (files) in an S3 bucket.
+     ACLs define which AWS accounts or users have permission to perform specific actions on the resource.
+
+Q12.Why do we need ACL ?
+Ans:-Access Control Lists (ACLs) are essential for providing fine-grained control over resource access, allowing users or systems to define specific permissions at the resource level in order to secure and manage data effectively  
+
+Q13.What is a Life cycle policy ? Why do we need to use the life cycle rule ?
+Ans:-A lifecycle policy is essential for automating the efficient management of data throughout its lifecycle, optimizing costs, ensuring compliance, and streamlining resource utilization in storage systems like Amazon S3.
+
+Q14.How can we make our bucket public ?
+Ans:- To make an Amazon S3 bucket public, configure the bucket's permissions by adjusting its bucket policy, access control lists (ACLs), and block public access settings in the AWS Management Console.
+
+Q15.How can we give public access to our bucket ?
+Ans:-To give public access to an Amazon S3 bucket, adjust the bucket's permissions by configuring its bucket policy, access control lists (ACLs), or block public access settings in the AWS Management Console to allow the desired level of access to the public.
+
+Q16.   Aws pricing factor of the S3 Service.
+Ans:-  Amazon S3 pricing factors include the chosen storage class, total storage usage, data transfer, requests, and additional costs for features like cross-region replication, data retrieval, and transfer acceleration.
+
+Q17.What is CORS ?
+Ans:-CORS (Cross-Origin Resource Sharing) is a web security mechanism that enables controlled access to resources on a web page from different domains, allowing or restricting cross-origin HTTP requests.
+
+Q18.What is S3 Inventory ?
+Ans:-S3 Inventory is an Amazon S3 feature that provides regular reports about objects and their metadata within a bucket, facilitating efficient analytics, compliance, and data management.
+
+Q19.What is the secondary word to Transfer acceleration ?Why do we need to use this transfer acceleration ?
+Ans:-The secondary term for Transfer Acceleration is Amazon S3 Transfer Acceleration, and it is used to speed up uploading and downloading objects to and from Amazon S3 by leveraging Amazon CloudFront's globally distributed edge locations, improving data transfer speeds for users across the globe.
+
