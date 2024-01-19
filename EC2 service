@@ -1,0 +1,102 @@
+Q1.What is EC2, Why do we need EC2 service in cloud computing ?
+Ans:-EC2, or Elastic Compute Cloud, is a service in cloud computing that provides resizable virtual servers (instances) on demand, allowing users to quickly scale computing capacity based on their application requirements, reducing the need for physical hardware and providing flexibility in managing workloads.
+
+Q2.Features of Amazon EC2 ?
+Ans:-Amazon EC2 provides virtual servers in the cloud that can be easily scaled, configured, and customized to run various types of applications, offering flexibility, security, and cost efficiency for users' computing needs.
+     Virtual Servers (Instances):
+     Variety of Instance Types:
+     Scaling:  
+     Elastic Load Balancing:
+     AMI (Amazon Machine Image):
+     Security Groups:
+     Virtual Private Cloud (VPC): 
+            and etc...
+
+Q3.What is Hypervisor ? and its types ?
+Ans:-A hypervisor is a software or firmware that enables virtualization by allowing multiple operating systems to share a single physical host, 
+     and its types include Type 1 (bare-metal) hypervisors and Type 2 (hosted) hypervisors.
+
+Q4.Where we use hypervisor
+Ans:-Hypervisors are used in virtualization scenarios, such as cloud computing platforms, data centers, and enterprise environments, to enable the efficient sharing of physical computing resources by multiple virtual machines (VMs) or operating systems on a single physical host.
+
+Q5.Steps to create an EC2 instance.
+Ans:-Sign in to the AWS Management Console:
+
+     Go to the AWS Management Console and sign in to your AWS account.
+     Navigate to EC2:
+     In the AWS Management Console, navigate to the "Services" dropdown and select "EC2" under the "Compute" section.
+
+     Launch Instance:
+     Click on the "Instances" link in the EC2 Dashboard, then click the "Launch Instances" button.
+
+     Choose an Amazon Machine Image (AMI):
+     Select an AMI that suits your requirements. This is the base operating system for your instance.
+
+     Choose an Instance Type:
+     Choose the instance type based on your application's resource needs. Instance types vary in terms of CPU, memory, storage, and networking capacity.
+
+     Configure Instance Details:
+     Configure details such as the number of instances, network settings (VPC, subnet), and other options. You can also add user data or configure advanced settings.
+
+     Add Storage:
+     Specify the size and type of storage for your instance. You can add additional volumes as needed.
+
+     Add Tags:
+     Optionally, add tags to your instance to help with identification and organization.
+
+     Configure Security Group:
+     Create or choose a security group, which acts as a virtual firewall for your instance. Configure inbound and outbound rules.
+
+     Review:
+     Review your configuration settings to ensure they are correct.
+
+     Launch:
+     Click the "Launch" button. You'll be prompted to select or create a key pair for secure SSH (Linux) or RDP (Windows) access.
+
+     choose an Existing Key Pair or Create a New Key Pair:
+     Select an existing key pair or create a new one. This key pair is crucial for securely accessing your instance.
+
+     Launch Instances:
+     Click the "Launch Instances" button. Your EC2 instances are now being launched.
+
+     View Instances:
+     You can view your instances on the EC2 Dashboard. Once the status checks are complete, your instances are ready for use.
+
+     Access Your Instance:
+     Use the key pair you selected or created to securely connect to your instance using SSH or RDP.
+
+Q6.EC2 Instance state ?
+Ans:-Here are the main EC2 instance states:
+     Pending:
+     Running:
+     Stopping:
+     Stopped:
+     Shutting Down:
+     Terminated:
+
+Q7.How many types of EC2 Instance-State codes ?
+Ans:-Amazon EC2 instances can have various state codes that provide more granular information about their current status. The instance-state codes include:
+
+     0 (Pending):
+     The instance is in the process of being launched.
+
+     16 (Running):
+     The instance is fully launched and running.
+
+     32 (Shutting Down):
+     The instance is in the process of being shut down.
+
+     48 (Terminated):
+     The instance has been terminated and no longer exists.
+
+     64 (Stopping):
+     The instance is in the process of being stopped.
+
+     80 (Stopped):
+     The instance is fully stopped.
+
+Q8.What is the meaning of server hibernating mode ?
+Ans:-In the context of servers, hibernation mode refers to a state in which the server's current system state, including all active processes and memory contents, is saved to disk, allowing the server to be powered off while preserving its current state. When the server is later powered back on, it can quickly resume from the hibernated state, returning to the exact point where it left off.
+
+     Hibernation is commonly used to save power consumption and reduce operational costs when a server is not actively in use.
+     Instead of keeping the server running in an idle state, hibernation allows it to be effectively powered down while retaining the ability to quickly resume normal operation without the need for a full system boot
