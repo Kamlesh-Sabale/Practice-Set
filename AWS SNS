@@ -1,0 +1,93 @@
+Q1.What is SNS ?
+Ans:-In simple terms, SNS (Amazon Simple Notification Service) is a messaging service in AWS that allows you to send notifications or messages to a distributed set of recipients through various delivery methods, like email, SMS, or application endpoints.
+
+Q2.Why do we use SNS ?
+Ans:- we use Amazon SNS to easily send messages or notifications to many people or systems at once, ensuring that important information is quickly and reliably delivered across different channels like email, text messages, or applications.
+
+Q3.What is an Amazon SNS function, and how we can configure it.
+Ans:-Definition: An SNS topic is a communication channel to which messages can be published and subscribers can be notified.
+
+     Use Cases: Topics are used to broadcast messages or notifications to multiple subscribers, allowing for flexible and scalable communication.
+
+     Configuration:
+     Navigate to SNS:
+     Open the AWS Management Console, and in the "Find Services" search bar, type "SNS" and select "Simple Notification Service."
+
+     Create a Topic:
+     Click on "Topics" in the left navigation pane, then click "Create topic."
+     Provide a name for your topic and click "Create topic."
+
+     Configure Subscriptions:
+     In the topic details, click "Create subscription."
+     Choose the protocol for the subscription (e.g., email, SMS), and provide the necessary information (e.g., email address).
+     Confirm the subscription when prompted.
+
+     Publish a Message:
+     In the topic details, click "Publish message."
+     Enter the message content and click "Publish message."
+
+     Set Access Policies (Optional):
+     In the topic details, click on the "Access policy" section.
+     Edit the access policy if needed to control who can publish or subscribe to the topic.
+
+Q4.Difference between Amazon SNS & Amazon SQS
+Ans:-
+     Amazon SNS (Simple Notification Service):
+     Use: SNS is like a broadcaster. It sends messages or notifications to multiple recipients or systems at once.
+     Communication Style: Pushes messages to subscribers.
+     Typical Use Case: Broadcasting news updates to subscribers.
+
+     Amazon SQS (Simple Queue Service):
+     Use: SQS is like a task queue. It stores and manages messages in a queue, and each message is processed by a single consumer.
+     Communication Style: Consumers pull messages from the queue.
+     Typical Use Case: Distributing tasks among workers in a scalable way.
+
+Q5.What are the different delivery formats and transports in AWS SNS ?
+Ans:-Amazon SNS supports various delivery formats like JSON and Raw, and it can deliver messages through different transports including HTTP/HTTPS, Email, SMS, SQS, Lambda, and platform-specific endpoints.
+
+Q6.What is the difference between SNS FIFO & Standard while creating the SNS topic.
+Ans:-Standard SNS Topic:
+     Ordering:
+     No strict ordering: Messages might not be delivered in the exact order they were published.
+
+     Delivery:
+     At-least-once delivery: Messages are delivered at least once, and duplicates might occur.
+
+     Use case:-
+     Best for scenarios where strict ordering is not critical, and duplicate messages are acceptable.
+
+     FIFO SNS Topic:
+     Ordering:
+     Strict ordering: Messages are delivered in the order they are published.
+
+     Delivery:
+     Exactly-once delivery: Messages are delivered exactly once and in the order they were published.
+
+     Use Case:
+     Ideal for scenarios where strict ordering is crucial, and duplicates are not acceptable.
+
+Q7.What is 10DLC in AWS ?
+Ans:-In simple words, 10DLC (10-Digit Long Code) is a type of phone number with 10 digits used for sending text messages from applications to people. 
+     It's often used by businesses to send messages with a recognizable sender ID, like their business name, and requires registration with mobile carriers to ensure compliance and prevent misuse. 
+     In the context of AWS, it's a way for businesses to send SMS messages through services like Amazon SNS.
+
+Q8.What are FIFO topics on SNS ?
+Ans:- a FIFO (First-In-First-Out) topic in Amazon SNS ensures that messages are delivered in the exact order they are sent and are delivered exactly once to subscribers.
+      It prevents duplicates and allows you to maintain a strict sequence of messages.
+      FIFO topics are useful when the order of messages is crucial for your application.
+
+Q9.What is SNS Mobile Push ?
+Ans:-In simple words, SNS Mobile Push in Amazon SNS (Simple Notification Service) is a feature that allows you to send push notifications to mobile devices, such as smartphones or tablets. 
+     It enables you to engage with users of your mobile applications by sending timely and relevant messages directly to their devices. 
+     SNS Mobile Push supports various mobile platforms, including iOS, Android, and others, making it easier for developers to implement push notification services in their applications.
+
+Q10.On which delivery method do we use and configure the subscription ?
+Ans:-when you want to receive messages from an Amazon SNS (Simple Notification Service) topic, you subscribe to it using a specific delivery method:
+
+     If you want messages delivered to an HTTP/HTTPS endpoint (like a web server), you provide the endpoint's URL.
+     For email delivery, you provide the email address.
+     For SMS delivery, you provide the phone number.
+     If you're using Amazon SQS for further processing, you provide the SQS queue's ARN.
+     For application endpoints or AWS Lambda functions, you provide the specific endpoint information.
+     Configuring a subscription means telling SNS how and where you want to receive the messages from the topic.
+     
